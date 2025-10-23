@@ -27,6 +27,7 @@ export type PluginNames =
   | '@hey-api/schemas'
   | '@hey-api/sdk'
   | '@hey-api/transformers'
+  | '@hey-api/trigger-extractor'
   | '@hey-api/typescript'
   | '@pinia/colada'
   | '@tanstack/angular-query-experimental'
