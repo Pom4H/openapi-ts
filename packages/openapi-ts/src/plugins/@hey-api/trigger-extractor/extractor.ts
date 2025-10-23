@@ -79,7 +79,7 @@ const determineTriggerKind = (
   }
   
   // Subscription heuristics
-  const hasSubscribeInPath = /\/(subscribe|subscriptions|webhook)/i.test(path);
+  const hasSubscribeInPath = /\/(subscribe|subscriptions|webhook|watch)/i.test(path);
   const hasTopic = operation['x-topic'] || operation.extensions?.['x-topic'];
   const hasCallbackUrl = operation.parameters?.some(
     (p: any) => p.name === 'callbackUrl' || p.name === 'callback_url' || p.name === 'webhookUrl',

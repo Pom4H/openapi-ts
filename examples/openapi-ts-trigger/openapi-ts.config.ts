@@ -1,7 +1,7 @@
 import { defineConfig } from '@hey-api/openapi-ts';
 
 export default defineConfig({
-  input: './google-docs-api.json',
+  input: './google-calendar-api.json',
   output: {
     path: './src/client',
   },
