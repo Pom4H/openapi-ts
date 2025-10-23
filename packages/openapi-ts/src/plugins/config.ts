@@ -28,6 +28,8 @@ import type { HeyApiSdkPlugin } from '~/plugins/@hey-api/sdk';
 import { defaultConfig as heyApiSdk } from '~/plugins/@hey-api/sdk';
 import type { HeyApiTransformersPlugin } from '~/plugins/@hey-api/transformers';
 import { defaultConfig as heyApiTransformers } from '~/plugins/@hey-api/transformers';
+import type { TriggerExtractorPlugin } from '~/plugins/@hey-api/trigger-extractor';
+import { defaultConfig as heyApiTriggerExtractor } from '~/plugins/@hey-api/trigger-extractor';
 import type { HeyApiTypeScriptPlugin } from '~/plugins/@hey-api/typescript';
 import { defaultConfig as heyApiTypeScript } from '~/plugins/@hey-api/typescript';
 import type { PiniaColadaPlugin } from '~/plugins/@pinia/colada';
@@ -63,6 +65,7 @@ export interface PluginConfigMap {
   '@hey-api/schemas': HeyApiSchemasPlugin['Types'];
   '@hey-api/sdk': HeyApiSdkPlugin['Types'];
   '@hey-api/transformers': HeyApiTransformersPlugin['Types'];
+  '@hey-api/trigger-extractor': TriggerExtractorPlugin['Types'];
   '@hey-api/typescript': HeyApiTypeScriptPlugin['Types'];
   '@pinia/colada': PiniaColadaPlugin['Types'];
   '@tanstack/angular-query-experimental': TanStackAngularQueryPlugin['Types'];
@@ -94,6 +97,7 @@ export const defaultPluginConfigs: {
   '@hey-api/schemas': heyApiSchemas,
   '@hey-api/sdk': heyApiSdk,
   '@hey-api/transformers': heyApiTransformers,
+  '@hey-api/trigger-extractor': heyApiTriggerExtractor,
   '@hey-api/typescript': heyApiTypeScript,
   '@pinia/colada': piniaColada,
   '@tanstack/angular-query-experimental': tanStackAngularQuery,

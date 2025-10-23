@@ -1,0 +1,15 @@
+{
+  "name": "@example/openapi-ts-trigger",
+  "private": true,
+  "version": "0.0.1",
+  "type": "module",
+  "description": "Example of @hey-api/trigger-extractor plugin",
+  "scripts": {
+    "openapi-ts": "openapi-ts",
+    "typecheck": "tsc --noEmit"
+  },
+  "devDependencies": {
+    "@hey-api/openapi-ts": "workspace:*",
+    "typescript": "5.8.3"
+  }
+}
